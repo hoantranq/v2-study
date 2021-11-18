@@ -1,0 +1,69 @@
+@import "../../../../styles/variable";
+
+// Layout
+.layout {
+  min-height: 100vh;
+  display: flex;
+}
+
+.left-group {
+  display: flex;
+  margin-left: 15px;
+}
+
+// Logo
+.logo {
+  width: 120px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 8px 15px 8px 0;
+}
+
+.header-buttons-area {
+  margin-right: 15px;
+  align-self: flex-end;
+}
+
+// Header
+nz-header {
+  width: 100%;
+  padding: 0;
+  background-color: $main-color;
+  color: $main-text-color;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Sider
+.sider-navbar {
+  background-color: $side-bar-color;
+}
+
+// Main content
+.app-content-area {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Footer
+nz-footer {
+  height: 48px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: $main-color;
+  color: $main-text-color;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

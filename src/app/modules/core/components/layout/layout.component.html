@@ -1,0 +1,66 @@
+<nz-layout class="layout">
+  <nz-header>
+    <div class="header-container">
+      <div class="left-group">
+        <div class="collapse-menu-btn">
+          <button
+            nz-button
+            nzType="text"
+            class="btn-menu"
+            (click)="toggleCollapsed()"
+          >
+            <i nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
+          </button>
+        </div>
+        <div class="logo"></div>
+      </div>
+
+      <div class="header-buttons-area">
+        <nz-avatar
+          [nzShape]="'square'"
+          [nzSize]="'large'"
+          [nzIcon]="'user'"
+        ></nz-avatar>
+      </div>
+    </div>
+  </nz-header>
+
+  <nz-layout>
+    <nz-sider
+      nnzCollapsible
+      [(nzCollapsed)]="isCollapsed"
+      [nzTheme]="'light'"
+      [nzTrigger]="null"
+      nzWidth="200px"
+      class="sider-navbar"
+    >
+      <ul nz-menu nzTheme="dark" nzMode="inline">
+        <li nz-submenu nzTitle="User Management" nzIcon="usergroup-add">
+          <ul>
+            <li nz-menu-item>Users</li>
+          </ul>
+        </li>
+        <li nz-submenu nzTitle="Soft package" nzIcon="appstore-add">
+          <ul>
+            <li nz-menu-item>Sub menu 1</li>
+            <li nz-menu-item>Sub menu 2</li>
+          </ul>
+        </li>
+        <li nz-menu-item>
+          <i nz-icon nzType="ungroup"></i>
+          <span>About</span>
+        </li>
+      </ul></nz-sider
+    >
+
+    <nz-layout>
+      <nz-content>
+        <app-content></app-content>
+      </nz-content>
+
+      <nz-footer>
+        <div class="footer-text">Venera 2.0 - Quadient</div>
+      </nz-footer>
+    </nz-layout>
+  </nz-layout>
+</nz-layout>
